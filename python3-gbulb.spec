@@ -1,3 +1,7 @@
+%if 0%{?qubes_builder}
+%define _sourcedir %(pwd)
+%endif
+
 %define mod_name gbulb
 %define debug_package %{nil}
 
