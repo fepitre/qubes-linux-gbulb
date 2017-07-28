@@ -7,7 +7,7 @@
 
 Name:           python3-%{mod_name}
 Version:        0.5.3
-Release:        0
+Release:        0%{?dist}
 Url:            http://github.com/nathan-hoad/gbulb
 Summary:        GLib event loop for asyncio (PEP 3156)
 License:        Apache-2.0
