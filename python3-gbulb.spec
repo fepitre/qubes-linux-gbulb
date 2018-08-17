@@ -2,7 +2,7 @@
 %define debug_package %{nil}
 
 Name:           python-%{mod_name}
-Version:        0.5.3
+Version:        0.6.0
 Release:        2%{?dist}
 Url:            http://github.com/nathan-hoad/gbulb
 Summary:        GLib event loop for asyncio (PEP 3156)
