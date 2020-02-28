@@ -1,0 +1,5 @@
+python3-gbulb (0.6.1-1) unstable; urgency=medium
+
+  * Initial debian packaging
+
+ -- Paweł Marczewski <pawel@invisiblethingslab.com>  Fri, 28 Feb 2020 11:02:00 +0100

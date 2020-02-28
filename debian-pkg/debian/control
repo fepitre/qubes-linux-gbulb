@@ -1,0 +1,18 @@
+Source: python3-gbulb
+Section: python
+Priority: optional
+Maintainer: Paweł Marczewski <pawel@invisiblethingslab.com>
+Build-Depends: debhelper (>= 9), dh-python, python3-all, python3-setuptools, python3-gi, python3-sphinx
+Standards-Version: 3.9.8
+Homepage: https://github.com/nathan-hoad/gbulb
+X-Python3-Version: >= 3.2
+
+Package: python3-gbulb
+Architecture: all
+Depends: python3-gi, ${python3:Depends}, ${misc:Depends}
+Description: PEP 3156 event loop based on GLib (Python 3)
+ Gbulb is a Python library that implements a PEP 3156 interface for the GLib
+ main event loop under UNIX-like systems. As much as possible, except where
+ noted, it mimics asyncio's interface.
+ .
+ This package installs the library for Python 3.
