@@ -13,6 +13,10 @@ BuildRequires:  python%{python3_pkgversion}-devel
 BuildRequires:  python%{python3_pkgversion}-setuptools
 %{?python_provide:%python_provide python%{python3_pkgversion}-%{mod_name}}
 
+Patch0001: 0001-Fix-issue-where-the-socket-doesn-t-get-forgotten-and.patch
+Patch0002: 0002-futures.CancelledError-asyncio.CancelledError.patch
+Patch0003: 0003-futures.InvalidStateError-asyncio.InvalidStateError.patch
+
 %description
 Gbulb is a python library that implements a PEP 3156 interface for the GLib
 main event loop. It is designed to be used together with the tulip reference
@@ -27,7 +31,7 @@ main event loop. It is designed to be used together with the tulip reference
 implementation.
 
 %prep
-%setup -q -n %{mod_name}-%{version}
+%autosetup -p1 -n %{mod_name}-%{version}
 
 %build
 %py3_build
